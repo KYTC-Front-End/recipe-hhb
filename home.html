@@ -5,46 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recipe Website</title>
+  
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/madie.css">
 </head>
 
 <body>
-  <!--hero section-->
+  <!--Header section-->
   <header class="hero-section">
     <section class="nav-top-left">
       <img src="img/christmas_2012_new_2857.jpg"alt="logo" height="100vh" width="100vw">
     </section>
    
-    <section class="nav-top-center">
+    <nav class="nav-top-center">
       <ul>
-        <li>Home</li>
-        <li>Catergiers</li>
-        <li>Recipe</li>
-        <li>Submit </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Catergiers</a></li>
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">Submit Recipe</a></li>
       </ul>
-    </section>
+
+    </nav>
     <section class="search-bar">            
-        <section class="group">
-          <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
-          <input placeholder="Search" type="search" class="input">
-        </section>
+      <section class="group">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+        <input placeholder="Search" type="search" class="input">
       </section>
   </header>
 
    <!--start section-->
 
    <section class="start-section">
-   
-      <section class="content">
-        <h1>Top Recipe  <span  id="top">Of the day</span>
-      </h1>
-        
-     
+    <section class="image_background">
+      <!-- <section class="content"> -->
+        <h1 class="h1-t">Top Recipe <span id="top">Of the day</span></h1>
       <p id="p">Unleash Your Culinary Creativity with Our <br>Mouthwatering Recipes</p><br>
       <button type="button" class="button2">See More</button>
+    <!-- </section> -->
     </section>
     </section>
+
+   
     <br>
     <!--feauter-->
     <section class="Featured-Recipe">
@@ -76,7 +77,7 @@
 
     <section class="image-container2">
       <section class="img4">   
-       <img src="img/delicious-boneless-chicken-sauce-arrangement 2.png" alt="img4" >
+       <img src="delicious-boneless-chicken-sauce-arrangement 2.png" alt="img4" >
        <h2>Steamed broccoli</h2>
        <p id="caption3">Put your wine, shallot, herbs and peppercorns<br> into a small pot and bring to the boil</p>
      </section>
@@ -137,35 +138,27 @@
   </section>
 
   <!--footer-->
-  
-    <footer>
-        <section class="foot">
-          <section class="foot-logo">
-            <img src="img/christmas_2012_new_2857_360-removebg-preview 4.png" alt="">
-          </section>
-          <section class="list-foot">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#gatogary.html" target="_blank">Catergiers</a></li>
-              <li><a href="#">Recipes</a></li>
-              <li><a href="#">Submit Recipe</a></li>
-            </ul>
-          </section>
-          <section class="help">
-            <ul>
-              <li><a href="#">privacy policy </a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Payment security</a></li>
-            </ul>
-          </section>
-          <section class="link">
-
-          </section>
-        </section>
-      </footer>
-
-
-<!--section -->
+  <section class="footer">
+  <footer>
+    <img src="img/christmas_2012_new_2857.jpg" alt="Footer Image"height="100vh" width="100vw">
+    <nav>
+      <ul>
+        <li><a href="privacy_policy.html">Privacy Policy</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="terms_conditions.html">Terms & Conditions</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="payment_security.html">Payment Security</a></li>
+        <li><a href="submit_recipe.html">Submit Recipe</a></li>
+        <li><a href="home.html">Home</a></li>
+      </ul>
+    </nav>
+    <section class="social-icons">
+      <a href="https://twitter.com"></a>
+      <a href="https://instagram.com"></i></a>
+      <a href="https://facebook.com"></i></a>
+    </section>
+  </footer>
+</section>
 </body>
 
 </html>

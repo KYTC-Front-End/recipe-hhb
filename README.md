@@ -18,3 +18,6 @@
 ###tool:
 ####figma
 ####vicula studio code
+####photoshope
+####Ai
+

@@ -10,16 +10,35 @@
   display: flex;
   text-align: center;
   color: #000000;
-  font-size: 1.5vw;
+  font-size: 1em;
   list-style:none;
   justify-content: space-around;
   width: 42vw;
-}  
-.nav-top-center ul li a{
+} 
+ul li a{
+  position: relative;
   text-decoration: none;
-  color: #000;
+  color: #000000;
+  padding: 0 10;
+}
+.nav-top-center ul li a::after{
+  content: "";
+  position: absolute;
+  background-color: #A36D3D;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+.nav-top-center ul li a:hover{
+  color: #823f3f;
 }
 
+.nav-top-center ul li a:hover::after{
+  width: 100%;
+
+} 
 .search-bar {
   display: inline-block;
   padding-top: 1.5rem;
@@ -85,35 +104,41 @@
 }
 /*start*/
 
-.start-section{
- 
-  background-image: url(../img/cover.jpg);
+.image_background{
+  background-image: url(ff551fa65a.jpg);
+  background-repeat: no-repeat;
+  background-position: 69%;
   background-size: cover;
-  height: 132vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-size: 30px;
-  color: #A36D3D;}
-  
- 
 
+}
+.h1-t{
+  font-size: 4rem;
+
+}
 .button2{
-  
-  border-radius: 30px;
-  background-color:#A36D3D;
-  opacity: 70%;
-  height: 5vh;
-  width: 10vw;
+  border-radius: 20px;
+    background-color: #A36D3D;
+    opacity: 90%;
+    height: 6vh;
+    width: 14vw;
+    font-size: smaller;
+    border: none;
 
 }
   
 #top{
   margin-top: 10rem;
-  color: #000000;
+  color: #A36D3D;
 }
 #p{
   color: #000000;
 }
+/* Featured */
 .Featured{
   color:#A36D3D;
  
@@ -162,12 +187,6 @@
  
   
 }
-.content{
-  display: flex;
-  flex-direction: column;
-  height: 38rem;
-  justify-content: center;
-}
 #caption3{
   color: #000000;
 }
@@ -204,66 +223,29 @@
   justify-content: space-around;
   color: #A36D3D;
 }
-footer{
-  margin-top: 50px;
-  background-color: #e6e6e6;
-
-}
-.foot{
-  display: flex;
-  justify-content: space-between;
-  
-}
-.list-foot ul li{
-  list-style: none;
-
-}
-.list-foot ul li a{
-  text-decoration: none;
-  color: #000000;
-}
-.help ul li{
-  list-style: none;
-}
-.help ul li a{
-  text-decoration: none;
-  color: #000000;
-
-}
-/* Cateroger */
-.list1{
-  width: 25%;
-}
-.list2{
-  width: 75%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.list1 button{
-  display: block;
-}
-.btn{
-  border: none;
-  padding: 15px;
-  background-color: white;
-  color: #000;
-  width: 200px;
-  margin-top: 20px;
-}
-.btn1{
-  border: none;
-  padding: 15px;
-  border-radius: 10px;
+footer {
   background-color: #A36D3D;
-  color: #fff;
-  width: 200px;
-  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
 }
-.sec2{
-  margin: 50px 100px;
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.sec-chick{
-  display: flex;
-  justify-content: space-between;
+
+footer ul li {
+  display: inline-block;
+  margin-right: 10px;
 }
+
+footer ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+footer ul li a:hover {
+  color: #666;
+}
+
